@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: blue;
+    font-family: 'Alegreya', serif;
+
+}
+.main-head{
+    background-image: url(assets/img/header.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
+.overlay{
+    background-color: rgba(0, 0,0, .5);
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+
+}
+.header{
+    /* background-color: brown; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.header img{
+    width: 30%;
+}
+.header h1{
+    font-size:70px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.header p{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+.header .btn{
+    padding: 15px 19px;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 10px;
+    border: none;
+}
+
+.header .btn-learn{
+    background-color:rgb(138, 131, 122);
+    color: #fff;
+}
+.btn-learn:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.header.btn-visit{
+
+}
+
+@media (max-width:800px){
+
+    body{
+        background-color:seagreen
+    }
+    h1{
+        color: beige;
+
+    }
+
+
+}
+/* end of the head  */
+/*  start the nav bar  */
+
+
+/*  end the nave bar  */

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Alegreya', serif; 
+    height: 5000px;
+}
+.options{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background-color: #fff;
+    width: 50px;
+    height: 100px;
+    z-index: 99999999;
+}
+.options li a{
+    padding-top: 15px;
+    font-size: 20px;
+    margin-left: 10px;
+    display: block;
+}
+.container{
+     width: 80%;
+     margin: auto;
+}
+ul{
+    list-style: none;
+}
+.header{
+    text-align: center;
+    /* background-color: brown; */
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+.overlay{
+    background-color: rgba(0, 0,0, .5);
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.navbar{
+    overflow: hidden;
+    padding-top: 20px;
+    position: sticky; /*اذا البوزيشن ستيكي اذا واحد من ابائها ماخد اوفر فلو هدن مش رح تشتغل معك هاي بنستخدمها عشان نخلي الناف بار ينزل معنا */
+/* حل مشكلة الستيكي لازم ولا واحد من اباء الكلاس ماخذ اوفر فلو هدن ولازم نعطي لكلاس توب و بوتون =0 */
+    top: 0;
+    bottom: 0;
+}    
+.navbar .logo{
+    float: left;
+    width: 30%;
+}
+.navbar .logo img{
+    width: 35%;
+}
+.navbar .nav{
+    float: left;
+    width: 60%;
+    padding-top: 20px;
+    margin-left: 90px;
+    /* background-color: aqua; */
+}
+.navbar .nav .list-item{
+    display: inline-block;  
+}
+.navbar .nav .list-item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.header-content{
+    padding-top: 50px;
+    
+}
+.header-content img{
+    width: 25%;
+}
+.header h1{
+    font-size:76px;
+    font-weight: 400; 
+    margin-bottom: 15px;
+}
+.header p{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 15px 30px;
+    border: none;
+    /* background-color: #c1ab84; */
+}
+.btn-learn{
+    background-color: #c1ab84;
+    color: #fff;
+    margin-right: 20px;
+}
+.btn-visit{
+
+
+}
+.btn-learn:hover{
+    background-color: rgb(97, 83, 83);
+    color: #000; 
+    cursor: pointer;
+}
+/* end header */
+
+/* start about  */
+
+.about{
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.about-img{
+    float: left;
+    width: 40%;
+}
+.about-content{
+    float: left;
+    width: 60%;
+    /* background-color: brown; */
+    text-align: center;
+    margin-top: 80px;
+}
+.about-content h2{
+    font-size:30px ;
+    color: #253048;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.about-content h3{
+    font-size:22px ;
+    color: #c1ab84;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+.about-content p{
+    line-height: 30px;
+    font-size:18px ;
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.about-content ul li{
+    /* background-color: red; */
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+
+}
+.about-content ul li i{
+   background-color: rgb(193 ,171,132); 
+   color:#fff;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   margin-top: 20px;
+   font-size: 20px;
+   float: left;
+}
+
+.about-content ul li span{
+    float: left;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+.about-img img{
+    width: 100%;
+}
+/*
+.about .container{
+    overflow: hidden;
+}
+*/
+/*
+هاي الطريقة الاولى لحل مشكلة الفلوت  بستدعي الكنتينر الي في كلاس الاباوت 
+لكن بدنا نحل مشكلة الفلوت عن طريك لكلير فكس زي الي تحت 
+*/
+.clrfix{
+    clear: both;
+}
+/* end about */
+
+/* start  reviewers */
+.reviewers-img img{
+    width: 100%;
+}
+.reviewers{
+    background-color: #f8f8f8;
+    padding: 70px;
+}
+.reviewers-desc{
+    float: left;
+    width: 60%;
+}
+.reviewers-desc h2{
+    color: rgb(13, 48, 72);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.reviewers-desc h3{
+    color: rgb(193, 171, 132);
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.reviewers-desc p{
+    font-size: 18px;
+    width: 79%;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+.reviewers-desc i{
+    margin-bottom: 20px;
+    margin-right: 30px;
+    color: #c1ab84;
+}
+.reviewers-img{
+    float: left;
+    width: 40%;
+}
+.reviewers .container{
+    overflow: hidden;
+}
+
+/* end  reviewers */
+
+/* start cover */
+.cover{
+    background-image: url(../img/shutterstock_280369721.jpg);
+    /* height: 60vh; */
+    padding: 250px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* end cover */
+
+/* start media quiry */
+@media(max-width:400px){
+
+.options{
+display: none;
+}  
+.navbar .logo{
+    float: none;
+    width: 100%;
+}
+.navbar .logo img{
+    width: 30%;
+}
+.navbar .nav{
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 5px;
+    /* background-color: aqua; */
+}
+.navbar .nav .list-item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.about-img{
+    float: none;
+    width: 100%;
+}
+.about-content{
+    float: none;
+    width: 100%;
+    /* background-color: brown; */
+    text-align: center;
+    margin-top: 80px;
+}
+}
+/* end media quiry  */
